@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://xspf.org/ns/0/">
+  <title>My Music</title>
+  <creator>UltiDev playlist generator</creator>
+  <annotation>Playlist generated on the fly from local media files.</annotation>
+  <info>file:///C:/Documents and Settings/n1vhrybok/My Documents/My Music</info>
+  <location>http%3a%2f%2f127.0.0.1%3a35741%2fHandlers%2fPlaylist.ashx</location>
+  <image>/Handlers/CoverArt.ashx?FolderImage=C:\Documents and Settings\n1vhrybok\My Documents\My Music\folder.jpg</image>
+  <trackList>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c04-confianzas_%5bgotan_project%5d_128_lame_cbr.mp3</location>
+      <title>Confianzas [Gotan Project]</title>
+      <creator>Gotan Project</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c04-confianzas_%5bgotan_project%5d_128_lame_cbr.mp3</image>
+      <album>Inspiracion-Espiracion</album>
+      <trackNum>4</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c04_-_anytime__anywhere_192_lame_cbr.mp3</location>
+      <title>Anytime, Anywhere</title>
+      <creator>Sarah Brightman</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c04_-_anytime__anywhere_192_lame_cbr.mp3</image>
+      <album>Eden</album>
+      <trackNum>4</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c05-tango_till_they_re_sore_192_lame_cbr.mp3</location>
+      <title>Tango Till They`re Sore</title>
+      <creator>Tom Waits</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c05-tango_till_they_re_sore_192_lame_cbr.mp3</image>
+      <album>Rain Dogs</album>
+      <trackNum>5</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c07+el+lloron+1.mp3</location>
+      <title>07 el lloron 1</title>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c07+el+lloron+1.mp3</image>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c10+sin+piel+1.mp3</location>
+      <title>10 sin piel 1</title>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c10+sin+piel+1.mp3</image>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c10_-_tickle_tango_192_lame_cbr.mp3</location>
+      <title>Tickle Tango</title>
+      <creator>Cirque Du Soleil</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c10_-_tickle_tango_192_lame_cbr.mp3</image>
+      <album>Zumanity</album>
+      <trackNum>10</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c16-vals_(k-f__moi_laskovii_i_nejnii_zver_)_192_lame_cbr.mp3</location>
+      <title>????? (?-? `??? ???????? ? ??</title>
+      <creator>?????? ????? ?? ??????????? (</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5c16-vals_(k-f__moi_laskovii_i_nejnii_zver_)_192_lame_cbr.mp3</image>
+      <album>????? 1</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cCarlos+Disarli+y+su+Orquesta+Tipica+-+Bahia+Blanca.mp3</location>
+      <title>Carlos DiSarli Y Su Orquesta</title>
+      <creator>Tango Lesson</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cCarlos+Disarli+y+su+Orquesta+Tipica+-+Bahia+Blanca.mp3</image>
+      <album>Soundtrack</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cElectrocutango-felino.mp3</location>
+      <title>felino</title>
+      <creator>Electrocutango</creator>
+      <annotation>eng</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cElectrocutango-felino.mp3</image>
+      <album>Felino</album>
+      <trackNum>1</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cEminem+-+The+Real+Slim+Shady.mp3</location>
+      <title>The Real Slim Shady</title>
+      <creator>Eminem</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cEminem+-+The+Real+Slim+Shady.mp3</image>
+      <album>The Real Slim Shady</album>
+      <trackNum>1</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cHow's+It+Gonna+End.mp3</location>
+      <title>ÿþHow's It Gonna End</title>
+      <creator>ÿþTom Waits</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cHow's+It+Gonna+End.mp3</image>
+      <album>ÿþReal Gone</album>
+      <trackNum>ÿþ6</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cPiazzolla+-+Preparense.mp3</location>
+      <title>Preparense</title>
+      <creator>Piazzolla</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cPiazzolla+-+Preparense.mp3</image>
+      <album>Greatest Hits</album>
+      <trackNum>8</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c01_-_willow_192_lame_cbr.mp3</location>
+      <title>Willow</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c01_-_willow_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>1</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c02_-_un_bel_di_192_lame_cbr.mp3</location>
+      <title>Un Bel Di</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c02_-_un_bel_di_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>2</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c03_-_secret_tear_192_lame_cbr.mp3</location>
+      <title>Secret Tear</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c03_-_secret_tear_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>3</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c04_-_dido_192_lame_cbr.mp3</location>
+      <title>Dido</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c04_-_dido_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>4</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c05_-_pace_pace_192_lame_cbr.mp3</location>
+      <title>Pace Pace</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c05_-_pace_pace_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>5</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c06_-_pamina_blue_192_lame_cbr.mp3</location>
+      <title>Pamina Blue</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c06_-_pamina_blue_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>6</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c07_-_habanera_192_lame_cbr.mp3</location>
+      <title>Habanera</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c07_-_habanera_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+      <trackNum>7</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c08_-_home_192_lame_cbr.mp3</location>
+      <title>Home</title>
+      <creator>Aria</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria%5c08_-_home_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c01-arianna.mp3</location>
+      <title>Arianna</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c01-arianna.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>1</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c02-ebben.mp3</location>
+      <title>Ebben</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c02-ebben.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>2</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c03-addio.mp3</location>
+      <title>Addio</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c03-addio.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>3</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c04-horizon.mp3</location>
+      <title>Horizon</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c04-horizon.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>4</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c05-barcarolle.mp3</location>
+      <title>Barcarolle</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c05-barcarolle.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>5</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c06-cantilena.mp3</location>
+      <title>Cantilena</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c06-cantilena.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>6</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c07-sviraj_(lullabye).mp3</location>
+      <title>Sviraj (Lullabye)</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c07-sviraj_(lullabye).mp3</image>
+      <album>New Horizon</album>
+      <trackNum>7</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c08-interlude.mp3</location>
+      <title>Interlude</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c08-interlude.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>8</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c09-pavane.mp3</location>
+      <title>Pavane</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c09-pavane.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>9</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c10-ave_maria.mp3</location>
+      <title>Ave Maria</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c10-ave_maria.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>10</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c11-leiermann.mp3</location>
+      <title>Leiermann</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c11-leiermann.mp3</image>
+      <album>New Horizon</album>
+      <trackNum>11</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c12-lullabye_(sviraj).mp3</location>
+      <title>Lullabye (Sviraj)</title>
+      <creator>Aria</creator>
+      <annotation>enghttp://www.allofmp3.com</annotation>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cAria+-+New+Horizon%5c12-lullabye_(sviraj).mp3</image>
+      <album>New Horizon</album>
+      <trackNum>12</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cConverted%5cHugo+Diaz+-+El+Lloron.mp3</location>
+      <title>El Lloron</title>
+      <creator>Hugo Diaz</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cConverted%5cHugo+Diaz+-+El+Lloron.mp3</image>
+      <album>Classical Tango Argentino [200</album>
+      <trackNum>5</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c01_-_dance_me_to_the_end_of_love_192_lame_cbr_ex.mp3</location>
+      <title>Dance Me To The End Of Love</title>
+      <creator>Madeleine Peyroux</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c01_-_dance_me_to_the_end_of_love_192_lame_cbr_ex.mp3</image>
+      <album>Careless Love</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c02-libertango_192_lame_cbr.mp3</location>
+      <title>Libertango</title>
+      <creator>Sharon Shannon</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c02-libertango_192_lame_cbr.mp3</image>
+      <album>Libertango</album>
+      <trackNum>2</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c04-blue_tangos_192_lame_cbr.mp3</location>
+      <title>Blue Tangos</title>
+      <creator>Paolo Conte</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c04-blue_tangos_192_lame_cbr.mp3</image>
+      <album>The Best Of Paolo Conte</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c05-via_con_me_192_lame_cbr.mp3</location>
+      <title>Via Con Me</title>
+      <creator>Paolo Conte</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c05-via_con_me_192_lame_cbr.mp3</image>
+      <album>The Best Of Paolo Conte</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c08-parigi_192_lame_cbr.mp3</location>
+      <title>Parigi</title>
+      <creator>Paolo Conte</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c08-parigi_192_lame_cbr.mp3</image>
+      <album>The Best Of Paolo Conte</album>
+      <trackNum>8</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c10-alle_prese_con_una_verde_milonga_192_lame_cbr.mp3</location>
+      <title>Alle Prese Con Una Verde Milo</title>
+      <creator>Paolo Conte</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c10-alle_prese_con_una_verde_milonga_192_lame_cbr.mp3</image>
+      <album>The Best Of Paolo Conte</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c11-kate_gibson_-_dance_me_to_the_end_of_love_192_lame_cbr.mp3</location>
+      <title>Kate Gibson - Dance Me To The</title>
+      <creator>Strange Days</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cSlon's+Music%5c11-kate_gibson_-_dance_me_to_the_end_of_love_192_lame_cbr.mp3</image>
+      <album>Soundtrack</album>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c01-not_gonna_get_us_192_lame_cbr.mp3</location>
+      <title>Not Gonna Get Us</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c01-not_gonna_get_us_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>1</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c02-all_the_things_she_said_192_lame_cbr.mp3</location>
+      <title>All The Things She Said</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c02-all_the_things_she_said_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>2</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c03-show_me_love_192_lame_cbr.mp3</location>
+      <title>Show Me Love</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c03-show_me_love_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>3</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c05-how_soon_is_now_192_lame_cbr.mp3</location>
+      <title>How Soon Is Now</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c05-how_soon_is_now_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>5</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c06-clowns_(can_you_see_me_now_)_192_lame_cbr.mp3</location>
+      <title>Clowns (Can You See Me Now)</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c06-clowns_(can_you_see_me_now_)_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>6</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c07-malchik_gay_192_lame_cbr.mp3</location>
+      <title>Malchik Gay</title>
+      <creator>???? (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c07-malchik_gay_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>7</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c08-stars_192_lame_cbr.mp3</location>
+      <title>Stars</title>
+      <creator>???? (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c08-stars_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>8</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c09-ya_soshla_s_uma_(ya_shosla_s_uma)_192_lame_cbr.mp3</location>
+      <title>Ya Shosla S Uma</title>
+      <creator>???? (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c09-ya_soshla_s_uma_(ya_shosla_s_uma)_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>9</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c10-nas_ne_dogonyat_(nas_ne_dagoniat)_192_lame_cbr.mp3</location>
+      <title>Nas Ne Dagoniat</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c10-nas_ne_dogonyat_(nas_ne_dagoniat)_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>10</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c11-show_me_love_(extended_version)_192_lame_cbr.mp3</location>
+      <title>Show Me Love (Extended Versio</title>
+      <creator>???? (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c11-show_me_love_(extended_version)_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>3</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c12-30_minutes_(remix)_192_lame_cbr.mp3</location>
+      <title>30 minutes (remix)</title>
+      <creator>Òàòó (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c12-30_minutes_(remix)_192_lame_cbr.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>12</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c30_minutes.mp3</location>
+      <title>30 Minutes</title>
+      <creator>???? (tATu)</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cTatu+-+200+KMH+in+the+Wrong+Lane%5c30_minutes.mp3</image>
+      <album>200 KM/H in the Wrong Lane</album>
+      <trackNum>4</trackNum>
+    </track>
+    <track>
+      <location>/Handlers/Song.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cUnknown+Artist%5cMezzanine%5c07+Angel.mp3</location>
+      <title>Angel</title>
+      <creator>Massive Attack</creator>
+      <image>/Handlers/CoverArt.ashx?C%3a%5cDocuments+and+Settings%5cn1vhrybok%5cMy+Documents%5cMy+Music%5cUnknown+Artist%5cMezzanine%5c07+Angel.mp3</image>
+      <album>Mezzanine</album>
+      <trackNum>7</trackNum>
+    </track>
+  </trackList>
+</playlist>

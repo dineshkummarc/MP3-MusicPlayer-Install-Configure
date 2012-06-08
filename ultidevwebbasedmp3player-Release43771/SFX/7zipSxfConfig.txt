@@ -1,0 +1,5 @@
+﻿;!@Install@!UTF-8!
+Title="UltiDev Setup Self-Extrator"
+ExecuteFile="SetupStarter.exe"
+ExecuteParameters="/s SfxSetup.bat"
+;!@InstallEnd@!

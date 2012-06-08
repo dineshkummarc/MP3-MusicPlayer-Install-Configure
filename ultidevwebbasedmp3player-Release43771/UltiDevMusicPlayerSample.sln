@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MusicPlayerSetup", "MusicPlayerSetup\MusicPlayerSetup.vdproj", "{4C3E80FC-3AAD-418F-8165-33CAD45C891C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstallHelper", "InstallHelper\InstallHelper.csproj", "{D4A3301C-410E-407E-AC1F-4FB55AACE144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltdevMP3FlashPlayer", "UltdevMP3FlashPlayer\UltdevMP3FlashPlayer.csproj", "{B0810D6E-6A55-478C-BA69-DD63831B703A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{44CCFCFE-78AE-4622-9B7B-4D53186120CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SFX", "SFX", "{F8AC9D55-5B8F-465E-B6DC-8E6C9B186A13}"
+	ProjectSection(SolutionItems) = preProject
+		SFX\7zipSxfConfig.txt = SFX\7zipSxfConfig.txt
+		SFX\SetupStarter.exe = SFX\SetupStarter.exe
+		SFX\SfxSetup.bat = SFX\SfxSetup.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7-zip", "7-zip", "{B88D0954-2D69-438D-B5C0-92E385AA4603}"
+	ProjectSection(SolutionItems) = preProject
+		SFX\7-Zip\7-zip.chm = SFX\7-Zip\7-zip.chm
+		SFX\7-Zip\7-zip.chw = SFX\7-Zip\7-zip.chw
+		SFX\7-Zip\7-zip.dll = SFX\7-Zip\7-zip.dll
+		SFX\7-Zip\7z.dll = SFX\7-Zip\7z.dll
+		SFX\7-Zip\7z.exe = SFX\7-Zip\7z.exe
+		SFX\7-Zip\7z.sfx = SFX\7-Zip\7z.sfx
+		SFX\7-Zip\7zCon.sfx = SFX\7-Zip\7zCon.sfx
+		SFX\7-Zip\7zFM.exe = SFX\7-Zip\7zFM.exe
+		SFX\7-Zip\7zG.exe = SFX\7-Zip\7zG.exe
+		SFX\7-Zip\7zS.sfx = SFX\7-Zip\7zS.sfx
+		SFX\7-Zip\7zSD.sfx = SFX\7-Zip\7zSD.sfx
+		SFX\7-Zip\copying.txt = SFX\7-Zip\copying.txt
+		SFX\7-Zip\descript.ion = SFX\7-Zip\descript.ion
+		SFX\7-Zip\History.txt = SFX\7-Zip\History.txt
+		SFX\7-Zip\License.txt = SFX\7-Zip\License.txt
+		SFX\7-Zip\readme.txt = SFX\7-Zip\readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs03.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MusicPlayerSetup\\MusicPlayerSetup.vdproj
+		SccProjectName1 = MusicPlayerSetup
+		SccLocalPath1 = MusicPlayerSetup
+		SccProjectUniqueName2 = InstallHelper\\InstallHelper.csproj
+		SccProjectName2 = InstallHelper
+		SccLocalPath2 = InstallHelper
+		SccProjectUniqueName3 = UltdevMP3FlashPlayer\\UltdevMP3FlashPlayer.csproj
+		SccProjectName3 = UltdevMP3FlashPlayer
+		SccLocalPath3 = UltdevMP3FlashPlayer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Debug|.NET.ActiveCfg = Debug
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Debug|Any CPU.ActiveCfg = Debug
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Debug|Any CPU.Build.0 = Debug
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|.NET.ActiveCfg = Release
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|.NET.Build.0 = Release
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|Any CPU.ActiveCfg = Release
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|Any CPU.Build.0 = Release
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|Mixed Platforms.ActiveCfg = Release
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|Mixed Platforms.Build.0 = Release
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Release|.NET.ActiveCfg = Release|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D4A3301C-410E-407E-AC1F-4FB55AACE144}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B0810D6E-6A55-478C-BA69-DD63831B703A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8AC9D55-5B8F-465E-B6DC-8E6C9B186A13} = {44CCFCFE-78AE-4622-9B7B-4D53186120CF}
+		{B88D0954-2D69-438D-B5C0-92E385AA4603} = {F8AC9D55-5B8F-465E-B6DC-8E6C9B186A13}
+	EndGlobalSection
+EndGlobal

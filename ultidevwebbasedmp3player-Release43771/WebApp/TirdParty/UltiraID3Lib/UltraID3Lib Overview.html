@@ -1,0 +1,781 @@
+<html dir="LTR"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"><title>
+UltraID3Lib Overview</title><xml></xml><link rel="stylesheet" type="text/css" href="MSDN.css"><script language="javascript" type="text/javascript" src="scroll.js"></script></head><body id="bodyID" class="dtBODY"><div id="nsbanner"><div id="bannerrow1"><table class="bannerparthead" cellspacing="0"><tr id="hdr"><td class="runninghead">UltraID3Lib</td><td class="product"></td></tr></table></div><div id="TitleRow"><h1 class="dtH1">
+  Overview</h1></div></div><div id="nstext"><h4 class="dtH4">What is 
+  UltraID3Lib?</h4>
+  <p>UltraID3<span lang="en-us">Lib</span> is a fully object-oriented class library for the reading and editing of 
+both ID3v1 and ID3v2 tags in MP3 files.&nbsp; Reading of MPEG data, such as 
+  duration, bitrate, and frequency, is supported as well.&nbsp; UltraID3Lib was written in Visual Basic 
+.NET and is available as a .NET dll.</p>
+  <h4 class="dtH4">Terminology</h4><div class="tablediv">
+    <table class="dtTABLE" cellspacing="0" width="100%">
+<tr VALIGN="top"><td width="18%">Tag</td><td width="82%">
+    <span lang="en-us">A section of an MP3 file containing data about the track.</span></td></tr>
+<tr VALIGN="top"><td width="18%">Frame</td><td width="82%"> 
+    <span lang="en-us">T</span>he portion of a ID3v2 Tag which contains a particular element of data 
+    <span lang="en-us">(the Field) </span>and 
+    its associated metadata.&nbsp; For example, the Comments Frame not only 
+    contains the actual comments, but also contains a description of the 
+    comments, the language of the comments, and even the text encoding used to 
+    store the comments.</td></tr>
+<tr VALIGN="top"><td width="18%">
+    <span lang="en-us">Field</span></td><td width="82%">
+    <span lang="en-us">Generically refers to the significant values in either an ID3v1 or 
+    an ID3v2 tag.&nbsp; ID3v1 tags only contain Fields, whereas ID3v2 tags 
+    contain Frames which contain the Fields and the Frame's metadata.</span></td></tr>
+<tr VALIGN="top"><td width="18%">ID3<span lang="en-us"> Version </span>1</td>
+  <td width="82%">
+    <span lang="en-us">A</span> tag version which allows for a limited amount of fixed-width text fields<span lang="en-us">.</span></td></tr>
+<tr VALIGN="top"><td width="18%">ID3<span lang="en-us"> Version </span>2</td>
+  <td width="82%">
+    <span lang="en-us">A</span> tag version which allows for numerous types of data to be stored in an 
+    <span lang="en-us">MP</span>3, including text, numeric, and even binary information such as graphics.</td></tr>
+<tr VALIGN="top"><td width="18%">ID3</td><td width="82%"> 
+    <span lang="en-us">T</span>he standard for encoding meta data into mp3 file</td></tr></table></div><h4 class="dtH4"><span lang="en-us">UltraID3 Class</span></h4>
+<p><span lang="en-us">The most important class in UltraID3Lib is the UltraID3 class.&nbsp; 
+This is the class used to read and write tag data.&nbsp; It  </span>has the following properties to 
+store data about a track:&nbsp; Artist, Title, Album, Track Number, Year, and 
+Genre.&nbsp; The UltraID3 class also has an ID3v1Tag property and an ID3v23Tag 
+which represents the two ID3 tag versions supported by UltraID3Lib.&nbsp; The 
+ID3v1Tag property and the ID3v23Tag property are themselves classes which also 
+have Artist, Title, Album, Track Number, Year, and Genre properties.&nbsp; The 
+fields for each version can be accessed directly using the ID3v1Tag and the 
+ID3v23Tag properties or they can be accessed using the &quot;generic&quot; properties of 
+the UltraID3 class.&nbsp; <span lang="en-us">The generic 
+properties </span>of the UltraID3 class <span lang="en-us">have different 
+behaviors depending on whether a write or a read is done.&nbsp; In general, 
+preference is given to  ID3v23Tag  over  ID3v1Tag  in both 
+reads and writes.</span>&nbsp; See charts below for details.</p>
+  <table class="dtTABLE" cellspacing="0" width="100%">
+<tr VALIGN="top"><td width="25%"><b><span lang="en-us">ID3v1 Tag Exists</span></b></td>
+  <td width="25%"><b><span lang="en-us">ID3v2 Tag Exists</span></b></td>
+  <td width="26%"><b><span lang="en-us">Tag Version From Which Values Are Read</span></b></td>
+  <td width="178%"><b><span lang="en-us">Tag Version To Which Values Are Written</span></b></td></tr>
+<tr VALIGN="top"><td width="25%"><span lang="en-us">No</span></td>
+  <td width="25%"><span lang="en-us">No</span></td><td width="26%">
+  <span lang="en-us">N/A</span></td><td width="178%"><span lang="en-us">
+	ID3v23Tag</span></td></tr>
+<tr VALIGN="top"><td width="25%"><span lang="en-us">Yes</span></td>
+  <td width="25%"><span lang="en-us">No</span></td><td width="26%"><span lang="en-us">ID3v1Tag</span></td>
+  <td width="178%"><span lang="en-us">ID3v1Tag</span></td></tr>
+<tr VALIGN="top"><td width="25%">No</td><td width="25%"><span lang="en-us">Yes</span></td>
+  <td width="26%"><span lang="en-us">ID3v23Tag</span></td><td width="178%"><span lang="en-us">ID3v23Tag</span></td></tr>
+<tr VALIGN="top"><td width="25%"><span lang="en-us">Yes</span></td>
+  <td width="25%"><span lang="en-us">Yes</span></td><td width="26%"><span lang="en-us">
+	ID3v23Tag</span></td>
+  <td width="178%"><span lang="en-us">ID3v</span>1Tag and <span lang="en-us">
+	ID3v23Tag</span></td></tr></table>
+<p>&nbsp;</p>
+<p>The Read method will open the specified file, search for the ID3 version 1 
+tag and the ID3 version 2 tag, parse the tags found, and set the appropriate 
+values in the ID3v1Tag and ID3v23Tag class properties.&nbsp; After a read is 
+performed, the UltraID3.ID3v1.FoundFlag and UltraID3.ID3v2.FoundFlag properties 
+can be checked to verify if the corresponding tag was found in the file which 
+was read.&nbsp; The UltraID3.ID3v1.WriteFlag and UltraID3.ID3v2.WriteFlag 
+properties control whether the corresponding tag is written when the Write 
+method is called.&nbsp; When a read is done, the WriteFlag values are defaulted 
+to the corresponding FoundFlag.&nbsp; For example, if a file has an ID3 version 
+2 tag, both the ID3v23Tag.FoundFlag and the ID3v23Tag.WriteFlag will initially be 
+set to True after a read of the file.</p>
+  	<h4 class="dtH4"><span lang="en-us">ID3 v2.3 Frames</span></h4>
+<p><span lang="en-us">There are seventy-four individual frames specified in the 
+ID3 v2.3 standard.&nbsp; UltraID3Lib has a separate class for each frame with properties specific to the kind of data it stores.&nbsp; 
+When an ID3v23Tag property, such as Artist or Title, is used to get or set a 
+value, the corresponding underlying Frame is actually used.&nbsp; The 
+UltraID3.ID3v23Tag.Frames.GetFrame method is used to retrieve Frames which can 
+only have one instance in a Tag, whereas the UltraID3.ID3v23Tag.Frames.GetFrames 
+method is used to retrieve Frames which can have multiple instances in a Tag. </span></p>
+  <table class="dtTABLE" cellspacing="0" width="80%" id="table1">
+<tr>
+		<td><b>Frame ID</b></td>
+		<td width="39%">
+		<b>Frame Description</b></td>
+
+		<td width="32%">
+		<b>Frame Class</b></td>
+	</tr>
+<tr>
+		<td>AENC</td>
+		<td width="39%">
+		Audio encryption</td>
+
+		<td width="32%">
+		<a href="HundredMilesSoftware.UltraID3Lib.ID3AudioEncryptionFrame.html">ID3AudioEncryptionFrame</a></td>
+	</tr>
+<tr>
+		<td>APIC</td>
+		<td>
+		Attached picture</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PictureFrame.html">ID3PictureFrame</a></td>
+	</tr>
+<tr>
+		<td>COMM</td>
+		<td>
+		Comments</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3CommentsFrame.html">ID3CommentsFrame</a></td>
+	</tr>
+<tr>
+		<td>COMR</td>
+		<td>
+		Commercial frame</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3CommercialFrame.html">ID3CommercialFrame</td>
+	</tr>
+<tr>
+		<td>ENCR</td>
+		<td>
+		Encryption method registration</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3EncryptionMethodRegistrationFrame.html">ID3EncryptionMethodRegistrationFrame</td>
+	</tr>
+<tr>
+		<td>EQUA</td>
+		<td>
+		Equalization</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3EqualizationFrame.html">ID3EqualizationFrame</td>
+	</tr>
+<tr>
+		<td>ETCO</td>
+		<td>
+		Event timing codes</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3EventTimingCodesFrame.html">ID3EventTimingCodesFrame</td>
+	</tr>
+<tr>
+		<td>GEOB</td>
+		<td>
+		General encapsulated object</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3GeneralEncapsulatedObjectFrame.html">ID3GeneralEncapsulatedObjectFrame</td>
+	</tr>
+<tr>
+		<td>GRID</td>
+		<td>
+		Group identification registration</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3GroupIdentificationRegistrationFrame.html">ID3GroupIdentificationRegistrationFrame</td>
+	</tr>
+<tr>
+		<td>IPLS</td>
+		<td>
+		Involved people list</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3InvolvedPeopleListFrame.html">ID3InvolvedPeopleListFrame</td>
+	</tr>
+<tr>
+		<td>LINK</td>
+		<td>
+		Linked information</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3LinkedInformationFrame.html">ID3LinkedInformationFrame</td>
+	</tr>
+<tr>
+		<td>MCDI</td>
+		<td>
+		Music CD identifier</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3CompactDiscIdentifierFrame.html">ID3CompactDiscIdentifierFrame</td>
+	</tr>
+<tr>
+		<td>MLLT</td>
+		<td>
+		MPEG location lookup table</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3MpegLocationLookupTableFrame.html">ID3MpegLocationLookupTableFrame</td>
+	</tr>
+<tr>
+		<td>OWNE</td>
+		<td>
+		Ownership frame</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OwnershipFrame.html">ID3OwnershipFrame</td>
+	</tr>
+<tr>
+		<td>PRIV</td>
+		<td>
+		Private frame</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PrivateFrame.html">ID3PrivateFrame</td>
+	</tr>
+<tr>
+		<td>PCNT</td>
+		<td>
+		Play counter</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PlayCounterFrame.html">ID3PlayCounterFrame</td>
+	</tr>
+<tr>
+		<td>POPM</td>
+		<td>
+		Popularimeter</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PopularimeterFrame.html">ID3PopularimeterFrame</td>
+	</tr>
+<tr>
+		<td>POSS</td>
+		<td>
+		Position synchronisation frame</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PositionSychronizationFrame.html">ID3PositionSychronizationFrame</td>
+	</tr>
+<tr>
+		<td>RBUF</td>
+		<td>
+		Recommended buffer size</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3RecommendedBufferSizeFrame.html">ID3RecommendedBufferSizeFrame</td>
+	</tr>
+<tr>
+		<td>RVAD</td>
+		<td>
+		Relative volume adjustment</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3RelativeVolumnAdjustmentFrame.html">ID3RelativeVolumnAdjustmentFrame</td>
+	</tr>
+<tr>
+		<td>RVRB</td>
+		<td>
+		Reverb</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3ReverbFrame.html">ID3ReverbFrame</td>
+	</tr>
+<tr>
+		<td>SYLT</td>
+		<td>
+		Synchronized lyric/text</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3SynchronizedLyricsFrame.html">ID3SynchronizedLyricsFrame</td>
+	</tr>
+<tr>
+		<td>SYTC</td>
+		<td>
+		Synchronized tempo codes</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3SynchronizedTempoCodesFrame.html">ID3SynchronizedTempoCodesFrame</td>
+	</tr>
+<tr>
+		<td>TALB</td>
+		<td>
+		Album/Movie/Show title</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3AlbumFrame.html">ID3AlbumFrame</td>
+	</tr>
+<tr>
+		<td>TBPM</td>
+		<td>
+		BPM (beats per minute)</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3BeatsPerMinuteFrame.html">ID3BeatsPerMinuteFrame</td>
+	</tr>
+<tr>
+		<td>TCOM</td>
+		<td>
+		Composer</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3ComposersFrame.html">ID3ComposersFrame</td>
+	</tr>
+<tr>
+		<td>TCON</td>
+		<td>
+		Content type</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3GenreFrame.html">ID3GenreFrame</td>
+	</tr>
+<tr>
+		<td>TCOP</td>
+		<td>
+		Copyright message</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3CopyrightMessageFrame.html">ID3CopyrightMessageFrame</td>
+	</tr>
+<tr>
+		<td>TDAT</td>
+		<td>
+		Date</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3RecordingDayMonthFrame.html">ID3RecordingDayMonthFrame</td>
+	</tr>
+<tr>
+		<td>TDLY</td>
+		<td>
+		Playlist delay</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PlaylistDelayFrame.html">ID3PlaylistDelayFrame</td>
+	</tr>
+<tr>
+		<td>TENC</td>
+		<td>
+		Encoded by</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3EncodedByFrame.html">ID3EncodedByFrame</td>
+	</tr>
+<tr>
+		<td>TEXT</td>
+		<td>
+		Lyricist/Text writer</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3LyricistFrame.html">ID3LyricistFrame</td>
+	</tr>
+<tr>
+		<td>TFLT</td>
+		<td>
+		File type</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3FileTypeFrame.html">ID3FileTypeFrame</td>
+	</tr>
+<tr>
+		<td>TIME</td>
+		<td>
+		Time</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3RecordingDurationTimeFrame.html">ID3RecordingDurationTimeFrame</td>
+	</tr>
+<tr>
+		<td>TIT1</td>
+		<td>
+		Content group description</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3ContentGroupDescriptionFrame.html">ID3ContentGroupDescriptionFrame</td>
+	</tr>
+<tr>
+		<td>TIT2</td>
+		<td>
+		Title/songname/content description</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3TitleFrame.html">ID3TitleFrame</td>
+	</tr>
+<tr>
+		<td>TIT3</td>
+		<td>
+		Subtitle/Description refinement</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3SubtitleFrame.html">ID3SubtitleFrame</td>
+	</tr>
+<tr>
+		<td>TKEY</td>
+		<td>
+		Initial key</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3InitialKeyFrame.html">ID3InitialKeyFrame</td>
+	</tr>
+<tr>
+		<td>TLAN</td>
+		<td>
+		Language(s)</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3LanguagesFrame.html">ID3LanguagesFrame</td>
+	</tr>
+<tr>
+		<td>TLEN</td>
+		<td>
+		Length</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3RecordingDurationMillisecondsFrame.html">ID3RecordingDurationMillisecondsFrame</td>
+	</tr>
+<tr>
+		<td>TMED</td>
+		<td>
+		Media type</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3MediaTypeFrame.html">ID3MediaTypeFrame</td>
+	</tr>
+<tr>
+		<td>TOAL</td>
+		<td>
+		Original album/movie/show title</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OriginalAlbumFrame.html">ID3OriginalAlbumFrame</td>
+	</tr>
+<tr>
+		<td>TOFN</td>
+		<td>
+		Original filename</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OriginalFileNameFrame.html">ID3OriginalFileNameFrame</td>
+	</tr>
+<tr>
+		<td>TOLY</td>
+		<td>
+		Original lyricist(s)/text writer(s)</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OriginalLyricistFrame.html">ID3OriginalLyricistFrame</td>
+	</tr>
+<tr>
+		<td>TOPE</td>
+		<td>
+		Original artist(s)/performer(s)</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OriginalArtistFrame.html">ID3OriginalArtistFrame</td>
+	</tr>
+<tr>
+		<td>TORY</td>
+		<td>
+		Original release year</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OriginalYearFrame.html">ID3OriginalYearFrame</td>
+	</tr>
+<tr>
+		<td>TOWN</td>
+		<td>
+		File owner/licensee</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OwnerFrame.html">ID3OwnerFrame</td>
+	</tr>
+<tr>
+		<td>TPE1</td>
+		<td>
+		Lead performer(s)/Soloist(s)</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3ArtistFrame.html">ID3ArtistFrame</td>
+	</tr>
+<tr>
+		<td>TPE2</td>
+		<td>
+		Band/orchestra/accompaniment</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3BandFrame.html">ID3BandFrame</td>
+	</tr>
+<tr>
+		<td>TPE3</td>
+		<td>
+		Conductor/performer refinement</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3ConductorFrame.html">ID3ConductorFrame</td>
+	</tr>
+<tr>
+		<td>TPE4</td>
+		<td>
+		Interpreted, remixed, or otherwise modified by</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3InterpretedByFrame.html">ID3InterpretedByFrame</td>
+	</tr>
+<tr>
+		<td>TPOS</td>
+		<td>
+		Part of a set</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PartOfSetFrame.html">ID3PartOfSetFrame</td>
+	</tr>
+<tr>
+		<td>TPUB</td>
+		<td>
+		Publisher</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PublisherFrame.html">ID3PublisherFrame</td>
+	</tr>
+<tr>
+		<td>TRCK</td>
+		<td>
+		Track number/Position in set</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3TrackNumFrame.html">ID3TrackNumFrame</td>
+	</tr>
+<tr>
+		<td>TRDA</td>
+		<td>
+		Recording dates</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3RecordingDatesFrame.html">ID3RecordingDatesFrame</td>
+	</tr>
+<tr>
+		<td>TRSN</td>
+		<td>
+		Internet radio station name</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3InternetRadioStationNameFrame.html">ID3InternetRadioStationNameFrame</td>
+	</tr>
+<tr>
+		<td>TRSO</td>
+		<td>
+		Internet radio station owner</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3InternetRadioStationOwnerFrame.html">ID3InternetRadioStationOwnerFrame</td>
+	</tr>
+<tr>
+		<td>TSIZ</td>
+		<td>
+		Size</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3SizeBytesFrame.html">ID3SizeBytesFrame</td>
+	</tr>
+<tr>
+		<td>TSRC</td>
+		<td>
+		ISRC (international standard recording code)</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3InternationalStandardRecordingCodeFrame.html">ID3InternationalStandardRecordingCodeFrame</td>
+	</tr>
+<tr>
+		<td>TSSE</td>
+		<td>
+		Software/Hardware and settings used for encoding</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3EncoderSettingsFrame.html">ID3EncoderSettingsFrame</td>
+	</tr>
+<tr>
+		<td>TYER</td>
+		<td>
+		Year</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3YearFrame.html">ID3YearFrame</td>
+	</tr>
+<tr>
+		<td>TXXX</td>
+		<td>
+		User defined text information frame</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3UserDefinedTextFrame.html">ID3UserDefinedTextFrame</td>
+	</tr>
+<tr>
+		<td>UFID</td>
+		<td>
+		Unique file identifier</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3UniqueFileIDFrame.html">ID3UniqueFileIDFrame</td>
+	</tr>
+<tr>
+		<td>USER</td>
+		<td>
+		Terms of use</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3TermsOfUseFrame.html">ID3TermsOfUseFrame</td>
+	</tr>
+<tr>
+		<td>USLT</td>
+		<td>
+		Unsychronized lyric/text transcription</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3UnsynchedLyricsFrame.html">ID3UnsynchedLyricsFrame</td>
+	</tr>
+<tr>
+		<td>WCOM</td>
+		<td>
+		Commercial information</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3CommercialInformationWebAddressFrame.html">ID3CommercialInformationWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WCOP</td>
+		<td>
+		Copyright/Legal information</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3CopyrightInformationWebAddressFrame.html">ID3CopyrightInformationWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WOAF</td>
+		<td>
+		Official audio file webpage</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OfficialAudioFileWebAddressFrame.html">ID3OfficialAudioFileWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WOAR</td>
+		<td>
+		Official artist/performer webpage</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OfficialArtistWebAddressFrame.html">ID3OfficialArtistWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WOAS</td>
+		<td>
+		Official audio source webpage</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OfficialAudioSourceWebAddressFrame.html">ID3OfficialAudioSourceWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WORS</td>
+		<td>
+		Official internet radio station homepage</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3OfficialInternetRadioStationWebAddressFrame.html">ID3OfficialInternetRadioStationWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WPAY</td>
+		<td>
+		Payment</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PaymentWebAddressFrame.html">ID3PaymentWebAddressFrame</td>
+	</tr>
+<tr>
+		<td>WPUB</td>
+		<td>
+		Publishers official webpage</td>
+
+		<td><a href="HundredMilesSoftware.UltraID3Lib.ID3PublisherWebAddressFrame.html">ID3PublisherWebAddressFrame</td>
+	</tr>
+	</table>
+<p>&nbsp;</p>
+  	<h4 class="dtH4"><span lang="en-us">
+  Sample Code (VB.NET)</span></h4><div class="tablediv"><table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="100%">
+  &nbsp;<font face="Courier">Dim TrackFileName As String = &quot;Powderfinger - My 
+	Happiness.mp3&quot;<br>
+	<br>
+	&#39;Create a new instance of the main UltraID3 class<br>
+	Dim TestUltraID3 As New UltraID3<br>
+	<br>
+	Try<br>
+	<br>
+&nbsp;&nbsp; &#39;Read the track file<br>
+&nbsp;&nbsp; TestUltraID3.Read(TrackFileName)<br>
+	<br>
+&nbsp;&nbsp; &#39;Display a single string representation of the common ID3 fields<br>
+&nbsp;&nbsp; MsgBox(TestUltraID3.ToString)<br>
+	<br>
+&nbsp;&nbsp; &#39;Display the Title, letting UltraID3 determine the appropriate tag 
+	source<br>
+&nbsp;&nbsp; MsgBox(TestUltraID3.Title)<br>
+	<br>
+&nbsp;&nbsp; &#39;Check to see if the ID3v1 tag was found<br>
+&nbsp;&nbsp; If TestUltraID3.ID3v1Tag.FoundFlag Then<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Display the Title property of the ID3v1Tag 
+	directly<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(TestUltraID3.ID3v1Tag.Title)<br>
+	<br>
+&nbsp;&nbsp; End If<br>
+	<br>
+&nbsp;&nbsp; &#39;Check to see if the ID3v23 tag was found<br>
+&nbsp;&nbsp; If TestUltraID3.ID3v23Tag.FoundFlag Then<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Display the Title property of the ID3v23Tag 
+	directly<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(TestUltraID3.ID3v23Tag.Title)<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Retrieve the ID3TitleFrame, if any<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dim MyID3TitleFrame As ID3TitleFrame = 
+	CType(TestUltraID3.ID3v23Tag.Frames.GetFrame(SingleInstanceFrameTypes.Title), 
+	ID3TitleFrame)<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Check to see if the ID3TitleFrame exists<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If Not MyID3TitleFrame Is Nothing Then<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Display the Title property of 
+	the ID3TitleFrame<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgBox(MyID3TitleFrame.Title)<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End If<br>
+	<br>
+&nbsp;&nbsp; End If<br>
+	<br>
+&nbsp;&nbsp; &#39;Retrieve any non-fatal exceptions which might have occurred <br>
+&nbsp;&nbsp; Dim UltraID3TagExceptions As UltraID3ContextMetaDataException() = 
+	TestUltraID3.GetExceptions()<br>
+	<br>
+&nbsp;&nbsp; If UltraID3TagExceptions.Length &gt; 0 Then<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dim IndexUltraID3TagException As 
+	UltraID3TagException<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Iterate through each found non-fatal exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For Each UltraID3ContextMetaDataException As 
+	UltraID3ContextMetaDataException In UltraID3TagExceptions<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Display the Message of the 
+	non-fatal exception<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	MsgBox(IndexUltraID3TagException.Message)<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next<br>
+	<br>
+&nbsp;&nbsp; End If<br>
+	<br>
+	&#39;Catch any fatal exceptions<br>
+	Catch exc As Exception<br>
+	<br>
+&nbsp;&nbsp; MsgBox(exc.Message)<br>
+	<br>
+	End Try</font></td></tr>
+    </table>
+    </div></div><div id="nstext0">
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<h4 style="margin-top: 0; margin-bottom: 0"><b>Exceptions</b></h4>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">There are three 
+	types of Exceptions that can occur during the UltraID3.Read method...</p>
+	<ol>
+		<li>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">Tag 
+		exceptions<br>
+		Thrown during a Read<br>
+		Prevents a Tag from being read</p></li>
+		<li>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">Frame 
+		Errors<br>
+		Prevents a Frame from being read<br>
+		Not thrown, but retrieved by the GetExceptions method after a Read</p>
+		</li>
+		<li>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">Frame 
+		Warnings<br>
+		Does not prevent a Frame from being read, but just records a 
+		non-standard format to the Frame</p></li>
+		<li>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">Not thrown, 
+		but retrieved by the GetExceptions method after a Read</p></li>
+	</ol>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">So, why are 
+	there exceptions that have to be retrieved using a function instead of being 
+	caught in a Try/Catch block?&nbsp; Well, many of the exceptions that would 
+	be returned by the GetExceptions can also be thrown in other situations.&nbsp; 
+	In other words, in the context of a Read, an exception may just give a 
+	warning that particular Frame field value is out of bounds or is not in the 
+	correct format.&nbsp; But if you were to try a an invalid value to Frame 
+	field, the same exception would be thrown.</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<h4 style="margin-top: 0; margin-bottom: 0"><b>MPEG Metadata</b></h4>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">While the 
+	primary purpose of UltraID3Lib is to read and write ID3 metadata in MP3&#39;s, 
+	reading of MPEG data is also supported.&nbsp; Probably the most commonly 
+	referenced MPEG metadata values are the duration and the bit rate.&nbsp; 
+	However, because MP3 files are constructed from an independent set of audio 
+	frames, determining the overall duration and bit rate of a track is not a 
+	straight forward matter. There are essentially four ways that one can get 
+	the duration and/or bit rate of an MP3 using UltraID3Lib, each one having 
+	their own pros and cons.</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">A) 
+	UltraID3.GetMPEGTrackInfo.Duration, UltraID3.GetMPEGTrackInfo.AverageBitRate</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">This is the 
+	most accurate method, but because it has to read each individual audio 
+	frame, it is also the most expensive.&nbsp; Each audio frame is read sequentially 
+	in order to determine the total duration and average bit rate of the overall 
+	track.&nbsp; Because of the sequential nature of the read, if any of the frames 
+	are corrupt, the location of the next frame cannot be determined and the 
+	function will fail.</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">B) 
+	UltraID3.FirstMPEGFrameInfo.Duration, UltraID3.FirstMPEGFrameInfo.Bitrate</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">This method is 
+	a good estimate of the duration and bit rate of a track, but because it only 
+	uses the first audio frame found, the results are not guaranteed 100% 
+	accurate.&nbsp; In particular, the duration is calculated using the overall file 
+	length and the bit rate recorded in the first MPEG frame found.&nbsp; But the bit 
+	rate can change from frame to frame, so the calculated duration and the bit 
+	rate can only ever be an estimate, albeit a most likely very good estimate.</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">C) 
+	UltraID3.FirstMPEGFrameInfo.VBRInfo.Duration</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">Using the 
+	Variable Bit Rate header, encoders have the ability to store information 
+	about the VBR parameters used to encode the track.&nbsp; If this optional 
+	information exists, the VBRInfo.Duration will return the recorded value.&nbsp; 
+	Please note, however, that this information is only as good as the encoder 
+	which stored the data and applies only to when the file was first encoded.&nbsp; 
+	If the file was edited after the initial encoding, this duration will be 
+	incorrect unless it was updated by the editing program.</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">D) 
+	UltraID3.Duration.</p>
+	<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">This method 
+	uses the Variable Bit Rate header (if it exists) to calculate the duration.&nbsp; 
+	As long as the Frame Count field is accurate, the duration will be accurate 
+	as well.&nbsp; If the VBR header doesn&#39;t exist or if it doesn&#39;t contain a Frame 
+	Count field, then the method will return the 
+	UltraID3.FirstMPEGFrameInfo.Duration.</div></body></html>

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MusicPlayerSetup", "MusicPlayerSetup\MusicPlayerSetup.vdproj", "{4C3E80FC-3AAD-418F-8165-33CAD45C891C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\WebApp\", "WebApp", "{17CA048C-8BCB-4B89-BD90-1E6D30503CF3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/WebApp"
+		Debug.AspNetCompiler.PhysicalPath = "WebApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebApp\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebApp"
+		Release.AspNetCompiler.PhysicalPath = "WebApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebApp\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3770"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Debug|.NET.ActiveCfg = Debug
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|.NET.ActiveCfg = Release
+		{4C3E80FC-3AAD-418F-8165-33CAD45C891C}.Release|.NET.Build.0 = Release
+		{17CA048C-8BCB-4B89-BD90-1E6D30503CF3}.Debug|.NET.ActiveCfg = Debug|.NET
+		{17CA048C-8BCB-4B89-BD90-1E6D30503CF3}.Debug|.NET.Build.0 = Debug|.NET
+		{17CA048C-8BCB-4B89-BD90-1E6D30503CF3}.Release|.NET.ActiveCfg = Debug|.NET
+		{17CA048C-8BCB-4B89-BD90-1E6D30503CF3}.Release|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

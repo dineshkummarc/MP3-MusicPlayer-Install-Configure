@@ -1,0 +1,78 @@
+﻿Body
+{
+}
+
+.UltiDevPlayerControl
+{
+	font-size: x-small;
+	font-family: Sans-Serif;
+	background-color: gray;
+	color: Black;
+
+	scrollbar-face-color: gainsboro;
+	scrollbar-highlight-color: White;
+	scrollbar-3dlight-color: DimGray;
+	scrollbar-darkshadow-color: DimGray;
+	scrollbar-shadow-color: gainsboro;
+	scrollbar-arrow-color: DimGray;
+	scrollbar-track-color: gainsboro;
+}
+
+.UltiDevPlayerControl .NewFolderButtonPanel
+{
+	text-align: right;
+	border-bottom: darkgray 1px solid;
+	background-color: gainsboro;
+}
+.UltiDevPlayerControl TD
+{
+	background-color: whitesmoke;
+	color: dimgray;
+}
+.UltiDevPlayerControl .TreeNodeClass
+{
+	color: Gray;
+}
+
+.UltiDevPlayerControl .SelectedTreeNode
+{
+	background-color:DimGray;
+	color:White;
+}
+
+.UltiDevPlayerControl input[type="submit"]
+{
+	font-weight: bold;
+	border-right: 1px solid gainsboro;
+	border-top: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+	border-bottom: 1px solid gainsboro;
+}
+
+.UltiDevPlayerControl A
+{
+	color: DimGray;
+}
+
+.UltiDevPlayerControl A:hover
+{
+	background-color: DimGray;
+	color: White;
+}
+
+.UltiDevPlayerControl .CurrentFolderName
+{
+	font-size:larger;
+	font-weight:bold;
+}
+
+.UltiDevPlayerControl .ControlCheckbox
+{
+	font-variant: small-caps;
+}
+
+.UltiDevPlayerControl .NewFolderTreePanel
+{
+	overflow: auto;
+	height: 520px;
+}

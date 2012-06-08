@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="Generator" content="iWeb 2.0.1" />
+    <meta name="iWeb-Build" content="local-build-20070911" />
+    <title>Xspf Jukebox Skin Documentation</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="skindoc_files/skindoc.css" />
+    <!--[if IE]><link rel='stylesheet' type='text/css' media='screen,print' href='skindoc_files/skindocIE.css'/><![endif]-->
+        <script type="text/javascript" src="skindoc_files/skindoc.js"></script>
+  </head>
+  <body style="background: #f5f4f4; margin: 0pt; " onload="onPageLoad();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: #f5f4f4; text-align: left; width: 700px; " id="body_content">
+        <div style="float: left; margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="float: left; height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 700px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id1" style="height: 126px; left: 179px; position: absolute; top: 49px; width: 491px; z-index: 1; " class="style_SkipStroke">
+            <div class="text-content graphic_shape_layout_style_default_External_491_126" style="padding: 0px; ">
+              <div class="graphic_shape_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style"><span class="style">XSPF Jukebox skin.xml Specification<br /></span></p>
+                <p class="paragraph_style"><span class="style"><br /></span></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1"><a href="http://blog.lacymorrow.com/projects/xspf-jukebox" title="http://blog.lacymorrow.com/projects/xspf-jukebox">http://blog.lacymorrow.com/projects/xspf-jukebox/</a></p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 128px; width: 128px;  height: 128px; left: 18px; position: absolute; top: 39px; width: 128px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0 shadow_0">
+            <img src="http://www.lacymorrow.com/projects/jukebox/skindoc_files/GarageBand%20App.png" alt="" style="border: none; height: 128px; width: 128px; " />
+          </div>
+          
+
+
+          <div id="id2" style="height: 27px; left: 507px; position: absolute; top: 8px; width: 178px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_178_27" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="Body">Last Updated: 09.06.2007</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id3" style="height: 109px; left: 18px; position: absolute; top: 181px; width: 663px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_663_109" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2"><span class="style_2">Description</span><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">The XSPF Jukebox is the remake of the XSPF Web Media Player, featuring a fully customizable interface through the use of “skin” files. The files are in a custom XML format, created for use specifically with the XSPF Jukebox. The specification is as follows:</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id4" style="height: 307px; left: 18px; position: absolute; top: 307px; width: 664px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_664_307" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2"><span class="style_2">Format</span><br /></p>
+                <p class="Body">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br /></p>
+                <p class="Body">&lt;skin version="0" xmlns="http://xsml.org/ns/0/"&gt; <br /></p>
+                <p class="Body">&lt;name&gt;<span class="style_3">skin name</span>&lt;/name&gt;<br /></p>
+				<p class="Body">&lt;width&gt;<span class="style_3">skin width</span>&lt;/width&gt;<br /></p>
+				<p class="Body">&lt;height&gt;<span class="style_3">skin height</span>&lt;/height&gt;<br /></p>
+                <p class="Body">&lt;author&gt;<span class="style_3">skin author</span>&lt;/author&gt;<br /></p>
+                <p class="Body">&lt;email&gt;<span class="style_3">author’s email</span>&lt;/email&gt;<br /></p>
+                <p class="Body">&lt;website&gt;<span class="style_3">author’s website</span>&lt;/website&gt;<br /></p>
+                <p class="Body">&lt;comment&gt;<span class="style_3">author’s comments</span>&lt;/comment&gt;<br /></p>
+                <p class="Body">&lt;object&gt;<span class="style_3"><br /></span></p>
+                <p class="Body"><span class="style_3">    all skin objects reside between the &lt;object&gt; tags</span><br /></p>
+                <p class="Body">&lt;/object&gt;<br /></p>
+                <p style="padding-bottom: 0pt; " class="Body">&lt;/skin&gt;</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id5" style="height: 254px; left: 18px; position: absolute; top: 615px; width: 663px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_663_254" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2"><span class="style_2">Display Objects</span><br /></p>
+                <p class="Body"><br /></p>
+                <p class="Body">&lt;background <span class="style_3">x=”” y=”” width=”” height=”” scale=”” image=”” shape=”” border=”” color=”” borderColor=”” alpha=”” </span>/&gt;<br /></p>
+                <p class="paragraph_style_3">&lt;image <span style="line-height: 20px; " class="style_4">x=”” y=”” z=”” width=”” height=”” image=”” alpha=”” url=”” target=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="paragraph_style_3">&lt;shape <span style="line-height: 20px; " class="style_4">x=”” y=”” z=”” width=”” height=”” shape=”” border=”” color=”” borderColor=”” alpha=”” url=”” target=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="paragraph_style_3">&lt;text <span style="line-height: 20px; " class="style_4">x=”” y=”” z=”” size=”” color=”” font=”” text=”” border=”” bold=”” italic=”” underline=”” alpha=”” url=”” target=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">&lt;playlist <span style="line-height: 20px; " class="style_4">x=”” y=”” z=”” width=”” height=”” size=”” color=”” font=”” selectedColor=”” bold=”” italic=”” underline=”” alpha=”” hoverMessage=”” </span>/&gt;</p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_3">&lt;badge <span style="line-height: 20px; " class="style_4">x=”” y=”” width=”” height=”” </span>/&gt;</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id6" style="height: 1043px; left: 18px; position: absolute; top: 893px; width: 663px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_663_1043" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2">Function Objects<br /></p>
+                <p class="paragraph_style_1">All function objects begin with an &lt;object&gt; tag, and are distinguished through a “label” attribute. Most labels have similar attributes, but there are some slight differences.<br /></p>
+                <p class="Body"><br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">playButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">playpauseButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">stopButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">prevButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">fwdButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">shuffleButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">repeatButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">scrollButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” bgColor=”” alpha=”” bgAlpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">scrollupButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">scrolldownButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">startButton</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">infoButton</span>” <span class="style_3">x=”” y=”” z=”” size=”” color=”” font=”” text=”” bold=”” italic=”” underline=”” target=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">purchaseButton</span>” <span class="style_3">x=”” y=”” z=”” size=”” color=”” font=”” text=”” bold=”” italic=”” underline=”” target=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">downloadButton</span>” <span class="style_3">x=”” y=”” z=”” size=”” color=”” font=”” text=”” bold=”” italic=”” underline=”” target=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">playDisplay</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">imageDisplay</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">videoDisplay</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">trackDisplay</span>” <span class="style_3">x=”” y=”” z=”” width=”” size=”” color=”” font=”” text=”” align=”” bold=”” italic=”” underline=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">timeDisplay</span>” <span class="style_3">x=”” y=”” z=”” size=”” color=”” font=”” text=”” bold=”” italic=”” underline=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">fulltimeDisplay</span>” <span class="style_3">x=”” y=”” z=”” size=”” color=”” font=”” text=”” bold=”” italic=”” underline=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">volumeDisplay</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p class="Body">&lt;object label=”<span class="style_5">timeBar</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;<br /></p>
+                <p style="padding-bottom: 0pt; " class="Body"><object label=”<span class="style_5">loadBar</span>” <span class="style_3">x=”” y=”” z=”” width=”” height=”” scale=”” image=”” color=”” alpha=”” hoverMessage=”” </span>/&gt;</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id7" style="height: 592px; left: 18px; position: absolute; top: 1974px; width: 663px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_663_592" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2">Attributes<br /></p>
+                <p class="Body"><br /></p>
+                <p class="Body"><span class="style_3">x</span> : number : the x value for placing an object<br /></p>
+                <p class="Body"><span class="style_3">y</span> : number : the y value for placing an object<br /></p>
+                <p class="Body"><span class="style_3">z</span> : number : the z value, or depth of an object. <span class="style_5">depths are assigned automatically if omitted</span><br /></p>
+                <p class="Body"><span class="style_3">width</span> : number : the width of an object<br /></p>
+                <p class="Body"><span class="style_3">height</span> : number : the height of an object<br /></p>
+                <p class="Body"><span class="style_3">scale</span> : number : used in place of width/height. scales the object while retaining default aspect ratio. 1 equals no scale<br /></p>
+                <p class="Body"><span class="style_3">size</span> : number : font size. <span class="style_5">size must be preceded by a “+” for infoButton, purchaseButton, and downloadButton. ex. “+15”</span><br /></p>
+                <p class="Body"><span class="style_3">image</span> : url : load an image in place of the default symbol<br /></p>
+                <p class="Body"><span class="style_3">shape</span> : rectangle/rectRounded/circle/triangle : draws a shape for an object<br /></p>
+                <p class="Body"><span class="style_3">border</span> : number : defines a shape’s border width<br /></p>
+                <p class="Body"><span class="style_3">color</span> : hex code : sets the color of an object. ex. “ff0088”<br /></p>
+                <p class="Body"><span class="style_3">borderColor</span> : hex code : sets the color of an shape’s border<br /></p>
+                <p class="Body"><span class="style_3">bgColor</span> : hex code : sets the color of an object’s background<br /></p>
+                <p class="Body"><span class="style_3">selectedColor</span> : hex code : sets the color of the current track in the playlist<br /></p>
+                <p class="Body"><span class="style_3">font</span> : font name : sets the text font<br /></p>
+                <p class="Body"><span class="style_3">text</span> : text : displayed text<br /></p>
+                <p class="Body"><span class="style_3">align</span> : left/center/right : used only for trackDisplay. aligns text<br /></p>
+                <p class="Body"><span class="style_3">bold</span> : boolean : sets text bolding on/off<br /></p>
+                <p class="Body"><span class="style_3">italic</span> : boolean : sets text italics on/off<br /></p>
+                <p class="Body"><span class="style_3">underline</span> : boolean : sets text underline on/off<br /></p>
+                <p class="Body"><span class="style_3">alpha</span> : percent : sets alpha channel of object<br /></p>
+                <p class="Body"><span class="style_3">bgAlpha</span> : percent : sets alpha channel of an object’s background<br /></p>
+                <p class="Body"><span class="style_3">url</span> : url : allows an object to link to a web page<br /></p>
+                <p style="padding-bottom: 0pt; " class="Body"><span class="style_3">hoverMessage</span> : text : message displayed on mouse over</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="id8" style="height: 572px; left: 18px; position: absolute; top: 2610px; width: 663px; z-index: 1; " class="style_SkipStroke_2">
+            <div class="text-content graphic_textbox_layout_style_default_External_663_572" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-top: 0pt; " class="paragraph_style_2">Labels<br /></p>
+                <p class="Body"><br /></p>
+                <p class="Body"><span class="style_5">playButton</span> : a play button, toggles between play and pause<br /></p>
+                <p class="Body"><span class="style_5">playpauseButton</span> : a static play pause button, toggles between play and pause<br /></p>
+                <p class="Body"><span class="style_5">stopButton</span> : a stop button, stops the track<br /></p>
+                <p class="Body"><span class="style_5">prevButton</span> : a previous button, changes to the previous track<br /></p>
+                <p class="Body"><span class="style_5">fwdButton</span> : a forward button, changes to the next track<br /></p>
+                <p class="Body"><span class="style_5">shuffleButton</span> : a shuffle button, toggles on/off<br /></p>
+                <p class="Body"><span class="style_5">repeatButton</span> : a repeat button, toggles on/off<br /></p>
+                <p class="Body"><span class="style_5">scrollButton</span> : a scroll button with background, scrolls playlist<br /></p>
+                <p class="Body"><span class="style_5">scrollupButton</span> : an up arrow, scrolls playlist up<br /></p>
+                <p class="Body"><span class="style_5">scrolldownButton</span> : a down arrow, scrolls playlist down<br /></p>
+                <p class="Body"><span class="style_5">startButton</span> : a rectangle to indicate click location to start load or play, set alpha to 0<br /></p>
+                <p class="Body"><span class="style_5">infoButton</span> : text button to follow the current info link in a playlist<br /></p>
+                <p class="Body"><span class="style_5">purchaseButton</span> : text button to follow the current purchase link in a playlist<br /></p>
+                <p class="Body"><span class="style_5">downloadButton</span> : text button to directly link to the currently playing mp3<br /></p>
+                <p class="Body"><span class="style_5">playDisplay</span> : displays current track images<br /></p>
+                <p class="Body"><span class="style_5">imageDisplay</span> : displays current track images<br /></p>
+                <p class="Body"><span class="style_5">videoDisplay</span> : displays video tracks<br /></p>
+                <p class="Body"><span class="style_5">trackDisplay</span> : displays currently playing track<br /></p>
+                <p class="Body"><span class="style_5">timeDisplay</span> : displays current track time in a standard format “00:00”, toggles between time, duration, and time remaining<br /></p>
+                <p class="Body"><span class="style_5">fulltimeDisplay</span> : displays current track time in a full format “00:00/00:00”, displays time and duration<br /></p>
+                <p class="Body"><span class="style_5">volumeDisplay</span> : displays a volume bar to change track volume<br /></p>
+                <p class="Body"><span class="style_5">timeBar</span> : displays current track percentage in bar form, click to scan track<br /></p>
+                <p style="padding-bottom: 0pt; " class="Body"><span class="style_5">loadBar</span> :  displays loaded percentage for the current track in bar form</p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 3182px; line-height: 3182px; " class="spacer"> </div>
+        </div>
+        <div style="height: 100px; margin-left: 0px; position: relative; width: 700px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
